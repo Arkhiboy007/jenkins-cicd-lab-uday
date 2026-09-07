@@ -2,6 +2,10 @@ pipeline {
 
     agent any
 
+    environment {
+        PATH = "C:\\Users\\WCLAB\\AppData\\Local\\Python\\bin;${env.PATH}"
+    }
+
     stages {
 
         stage('Build') {
